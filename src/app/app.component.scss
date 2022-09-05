@@ -20,6 +20,7 @@
     h2{
         margin: 0;
         padding: 0;
+        padding-top: 20px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         color: #fff;
@@ -36,11 +37,180 @@
             border-radius: 50px;
             background-color: rgba(255, 255, 255, 0.15);
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
             
 
         }
+    }
+}
+
+h1, h2, h3, span, p {
+    font-family: Arial;
+    font-size: 22px;
+    color: #333;
+}
+
+.content section {
+    padding-left: 27.5px;
+    padding-right: 27.5px;
+}
+
+.content-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+
+    h1 {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+section {
+    padding-top: 28px;
+    padding-bottom: 20px;
+    border-top: 2px solid rgb(241, 241, 241);
+
+    .card {
+        height: 50px;
+        border-radius: 15px;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+
+        align-items: center;
+        margin-top: 24px;
+
+        svg {
+            padding-left: 24px;
+        }
+
+        span {
+            padding-left: 16px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    p {
+        color: rgb(140, 140, 140);
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+
+    p.small {
+        font-size: 14px;
+    }
+
+}
+
+.account { 
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+    .content-title, .balance {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+    
+    .carousel {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        padding-left: 28px;
+        width: calc(100% - 28px);
+        
+        
+        .carousel-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                justify-content: start;
+
+            }
+
+        }
+
+        .carousel-item-circle {
+            width: 68px;
+            height: 68px;
+            border-radius: 68px;
+            background-color: rgb(241, 241, 241);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .carousel-item.keen-slider__slide {
+            min-width: calc((100% / 4.5) - 14px) !important;
+            max-width: calc((100% / 4.5) - 14px) !important;
+        }
+    }
+
+    .my-cards {
+       margin-left: 28px;
+       margin-right: 28px; 
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 28px;
+        width: calc(100% - 28px);
+
+        .card {
+            height: 88px;
+
+            p {
+               padding-left: 20px;
+               padding-right: 20px; 
+               font-size: 14px;
+               font-weight: 200;
+               color: #333;
+               margin: 0;
+
+               .info {
+                color: blueviolet;
+                padding: 0;
+                
+               }
+            }
+        }
+
+        .card.keen-slider__slide {
+            min-width: calc((100% / 1.5) - 7px) !important;
+            max-width: calc((100% / 1.5) - 7px) !important;
+        }
+    }
+}
+
+.credit-card {
+    
+    h2 {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 6px;
+
+    }
+
+    h3 {
+        font-size: 14px;
+        color: rgb(100, 100, 100);
+        margin-top: 18px;
+    }
+
+    p{
+        font-size: 14px;
+        color: rgb(100, 100, 100);
     }
 }
